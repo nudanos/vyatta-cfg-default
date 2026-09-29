@@ -1,9 +1,13 @@
 Source: vyatta-cfg-default
-Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
-Priority: extra
-Section: contrib/net
-Standards-Version: 3.9.6
-Build-Depends: debhelper (>= 9), dh-exec
+Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
+Priority: optional
+Section: net
+Standards-Version: 4.7.2
+Build-Depends: debhelper-compat (= 13),
+ dh-exec
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/nudanos/vyatta-cfg-default.git
+Vcs-Browser: https://github.com/nudanos/vyatta-cfg-default
 
 Package: vyatta-cfg-default-minimal
 Architecture: all
@@ -12,14 +16,14 @@ Description: Minimal Vyatta Network OS configuration
  in dataplane image and all other images.
 Conflicts: vyatta-cfg-default-common
 Replaces: vyatta-cfg-default-common
-Depends:
+Depends: 
  ${misc:Depends}
 
 Package: vyatta-cfg-default-vdr-dp
 Architecture: all
 Conflicts: vyatta-cfg-default-common
 Replaces: vyatta-cfg-default-common
-Depends:
+Depends: 
  ${misc:Depends}
 Description: Vyatta default dataplane config
  Default config file for dataplane ISO
@@ -28,7 +32,7 @@ Package: vyatta-cfg-default-vr
 Architecture: all
 Conflicts: vyatta-cfg-default-common
 Replaces: vyatta-cfg-default-common
-Depends:
+Depends: 
  ${misc:Depends}
 Description: Vyatta packages for VR
  This package contains the CLI modules to control the set of
@@ -38,7 +42,7 @@ Package: vyatta-cfg-default-vdr
 Architecture: all
 Conflicts: vyatta-cfg-default-common
 Replaces: vyatta-cfg-default-common
-Depends:
+Depends: 
  ${misc:Depends}
 Description: Vyatta default packages for VDR
  This package contains the CLI modules to control the features
@@ -48,9 +52,8 @@ Package: vyatta-cfg-default-vcpe
 Architecture: all
 Conflicts: vyatta-cfg-default-common
 Replaces: vyatta-cfg-default-common
-Depends:
+Depends: 
  ${misc:Depends}
 Description: Vyatta default packages for vCPE
  This package contains the CLI modules to control the features
  specific to vCPE
-
