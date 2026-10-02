@@ -1,3 +1,11 @@
+vyatta-cfg-default (3.26) trixie; urgency=medium
+
+  * The default-configuration variants Provide, Conflict with and Replace
+    vyatta-cfg-default: each ships /etc/vyatta/yang.conf, so only one can be
+    installed.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Fri, 02 Oct 2026 09:39:48 -0700
+
 vyatta-cfg-default (3.25) trixie; urgency=medium
 
   * Port to Debian 13 (trixie): debhelper-compat 13, Standards-Version 4.7.2, Rules-Requires-Root, NuDanOS Vcs.

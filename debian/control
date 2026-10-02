@@ -14,15 +14,17 @@ Architecture: all
 Description: Minimal Vyatta Network OS configuration
  Vyatta yang modules for base image. Minimal set of modules used
  in dataplane image and all other images.
-Conflicts: vyatta-cfg-default-common
-Replaces: vyatta-cfg-default-common
+Provides: vyatta-cfg-default
+Conflicts: vyatta-cfg-default-common, vyatta-cfg-default
+Replaces: vyatta-cfg-default-common, vyatta-cfg-default
 Depends: 
  ${misc:Depends}
 
 Package: vyatta-cfg-default-vdr-dp
 Architecture: all
-Conflicts: vyatta-cfg-default-common
-Replaces: vyatta-cfg-default-common
+Provides: vyatta-cfg-default
+Conflicts: vyatta-cfg-default-common, vyatta-cfg-default
+Replaces: vyatta-cfg-default-common, vyatta-cfg-default
 Depends: 
  ${misc:Depends}
 Description: Vyatta default dataplane config
@@ -30,8 +32,9 @@ Description: Vyatta default dataplane config
 
 Package: vyatta-cfg-default-vr
 Architecture: all
-Conflicts: vyatta-cfg-default-common
-Replaces: vyatta-cfg-default-common
+Provides: vyatta-cfg-default
+Conflicts: vyatta-cfg-default-common, vyatta-cfg-default
+Replaces: vyatta-cfg-default-common, vyatta-cfg-default
 Depends: 
  ${misc:Depends}
 Description: Vyatta packages for VR
@@ -40,8 +43,9 @@ Description: Vyatta packages for VR
 
 Package: vyatta-cfg-default-vdr
 Architecture: all
-Conflicts: vyatta-cfg-default-common
-Replaces: vyatta-cfg-default-common
+Provides: vyatta-cfg-default
+Conflicts: vyatta-cfg-default-common, vyatta-cfg-default
+Replaces: vyatta-cfg-default-common, vyatta-cfg-default
 Depends: 
  ${misc:Depends}
 Description: Vyatta default packages for VDR
@@ -50,8 +54,9 @@ Description: Vyatta default packages for VDR
 
 Package: vyatta-cfg-default-vcpe
 Architecture: all
-Conflicts: vyatta-cfg-default-common
-Replaces: vyatta-cfg-default-common
+Provides: vyatta-cfg-default
+Conflicts: vyatta-cfg-default-common, vyatta-cfg-default
+Replaces: vyatta-cfg-default-common, vyatta-cfg-default
 Depends: 
  ${misc:Depends}
 Description: Vyatta default packages for vCPE
