@@ -33,9 +33,9 @@ system {
         }
     }
     login {
-        user tmpuser {
+        user vyatta {
             authentication {
-                plaintext-password "tmppwd"
+                plaintext-password "vyatta"
             }
             level admin
         }

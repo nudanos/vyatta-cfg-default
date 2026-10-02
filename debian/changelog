@@ -1,3 +1,11 @@
+vyatta-cfg-default (3.27) trixie; urgency=medium
+
+  * The default configuration's login is vyatta/vyatta (was tmpuser/tmppwd):
+    the NuDanOS live ISO logs in as vyatta/vyatta, and install image refuses
+    that password for the installed system.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Fri, 02 Oct 2026 13:03:49 -0700
+
 vyatta-cfg-default (3.26) trixie; urgency=medium
 
   * The default-configuration variants Provide, Conflict with and Replace
